@@ -6,9 +6,9 @@ Status key: **Implemented** (code runs and is tested), **Notes only** (written a
 
 | Module | Topic | Status |
 |---|---|---|
-| 1 | Artificial neuron | Notes only (source notes are in the lab folder) |
-| 2 | Perceptron and learning rule | Implemented in `src/perceptron.py` |
-| 3 | AND, OR, XOR | Implemented in `experiments/logic_gates.py`; proof below |
+| 1 | Artificial neuron | Implemented in `notebooks/01_artificial_neuron.ipynb` |
+| 2 | Perceptron and learning rule | Implemented in `src/perceptron.py` and `notebooks/02_perceptron_and_linear_separability.ipynb` |
+| 3 | AND, OR, XOR | Implemented in `experiments/logic_gates.py` and `notebooks/03_and_or_xor_experiments.ipynb`; proof below |
 | 4 | Activation functions | Planned |
 | 5 | Multilayer networks | Planned |
 | 6 | Loss functions | Planned |

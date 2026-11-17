@@ -67,7 +67,11 @@ neuron-to-neural-networks/
 ├── .gitignore                    Implemented
 ├── docs/
 │   └── learning_roadmap.md       Implemented
-├── notebooks/                    Planned (10 notebooks; see roadmap)
+├── notebooks/
+│   ├── 01_artificial_neuron.ipynb                       Implemented (executed)
+│   ├── 02_perceptron_and_linear_separability.ipynb      Implemented (executed)
+│   ├── 03_and_or_xor_experiments.ipynb                  Implemented (executed)
+│   └── 04–10 ...                                        Planned
 ├── src/
 │   └── perceptron.py             Implemented (tested)
 ├── tests/
@@ -153,7 +157,7 @@ Launch Jupyter for the notebooks:
 jupyter notebook notebooks/
 ```
 
-The notebooks are planned. The first working notebook (`01_neuron.ipynb`) is the original exercise from the lab folder and is not yet copied here.
+Notebooks 01–03 are saved with their outputs from a top-to-bottom run. Notebooks 04–10 are planned.
 
 ## Experiments
 
@@ -177,7 +181,8 @@ After the implemented material, a reader should be able to explain why AND and O
 | Perceptron implementation and tests | Implemented |
 | AND / OR / XOR experiment | Implemented |
 | Learning roadmap and proof | Implemented |
-| Notebooks 01–10 | Planned |
+| Notebooks 01–03 (neuron, perceptron, AND/OR/XOR) | Implemented, executed without errors |
+| Notebooks 04–10 | Planned |
 | Multilayer network, backpropagation, optimizers | Planned |
 | Transformer modules | Planned |
 

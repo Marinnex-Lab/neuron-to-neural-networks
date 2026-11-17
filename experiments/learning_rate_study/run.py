@@ -26,7 +26,6 @@ from pathlib import Path
 
 import matplotlib
 
-matplotlib.use("Agg")
 import matplotlib.pyplot as plt  # noqa: E402
 import numpy as np  # noqa: E402
 
@@ -170,4 +169,7 @@ def main() -> None:
 
 
 if __name__ == "__main__":
+    # Select the file-only backend only when run as a script. Importing this module from a
+    # notebook must not change the notebook's plotting backend.
+    matplotlib.use("Agg")
     main()

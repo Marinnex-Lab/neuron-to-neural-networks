@@ -72,7 +72,7 @@ neuron-to-neural-networks/
 │   ├── mathematical_prerequisites.md  Implemented
 │   ├── concept_relationship_map.md    Implemented (Mermaid)
 │   ├── experiment_design.md           Implemented
-│   └── references.md                  Implemented (verify before citing)
+│   └── references.md                  Implemented (checked; some venues flagged)
 ├── notebooks/
 │   ├── 01_artificial_neuron.ipynb                  Implemented (executed)
 │   ├── 02_perceptron_and_linear_separability.ipynb Implemented (executed)
@@ -228,16 +228,18 @@ These are not claims about results. They are directions for future work.
 
 ## References
 
-Full list with notes in [docs/references.md](docs/references.md). Key sources:
+Full list with checked details and notes in [docs/references.md](docs/references.md). Key sources:
 
-- Rosenblatt, F. (1958). The perceptron: A probabilistic model for information storage and organization in the brain. *Psychological Review*, 65(6), 386–408.
+- Rosenblatt, F. (1958). The perceptron: A probabilistic model for information storage and organization in the brain. *Psychological Review*, 65(6), 386–408. DOI: [10.1037/h0042519](https://doi.org/10.1037/h0042519)
 - Minsky, M., & Papert, S. (1969). *Perceptrons: An Introduction to Computational Geometry*. MIT Press.
-- Rumelhart, D. E., Hinton, G. E., & Williams, R. J. (1986). Learning representations by back-propagating errors. *Nature*, 323, 533–536.
-- Goodfellow, I., Bengio, Y., & Courville, A. (2016). *Deep Learning*. MIT Press.
-- Vaswani, A., et al. (2017). Attention is all you need. *Advances in Neural Information Processing Systems*.
+- Rumelhart, D. E., Hinton, G. E., & Williams, R. J. (1986). Learning representations by back-propagating errors. *Nature*, 323, 533–536. DOI: [10.1038/323533a0](https://doi.org/10.1038/323533a0)
+- LeCun, Y., Bengio, Y., & Hinton, G. (2015). Deep learning. *Nature*, 521, 436–444. DOI: [10.1038/nature14539](https://doi.org/10.1038/nature14539)
+- Cybenko, G. (1989). Approximation by superpositions of a sigmoidal function. *Mathematics of Control, Signals and Systems*, 2(4), 303–314. DOI: [10.1007/BF02551274](https://doi.org/10.1007/BF02551274)
+- Kingma, D. P., & Ba, J. (2015). Adam: A method for stochastic optimization. *ICLR*. arXiv: [1412.6980](https://arxiv.org/abs/1412.6980)
+- Vaswani, A., et al. (2017). Attention is all you need. *Advances in Neural Information Processing Systems 30*. arXiv: [1706.03762](https://arxiv.org/abs/1706.03762)
 
-Bibliographic details were written from memory and have not been checked against a database. Verify them before citing.
+Each entry was checked against bibliographic records during the final review. Where a venue could not be confirmed (Novikoff 1962, He et al. 2015, Ioffe & Szegedy 2015), `docs/references.md` says so. Confirm the details before a formal citation.
 
 ## License
 
-This project is licensed under the MIT License. See [LICENSE](LICENSE).
+This project is licensed under the MIT License. Copyright (c) 2026 Marinnex Lab. See [LICENSE](LICENSE).

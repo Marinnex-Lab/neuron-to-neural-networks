@@ -2,6 +2,14 @@
 
 **From a single artificial neuron to modern neural networks: the mathematics of learning, architecture, and limitations.**
 
+![Single perceptron on AND, OR and XOR: decision boundaries and mistakes per epoch](assets/plots/logic_gates.png)
+
+### Results at a glance
+
+- **AND and OR:** one perceptron reaches 100% accuracy with 0 mistakes after epoch 4.
+- **XOR:** one perceptron never reaches 0 mistakes (50% accuracy). A proof shows no straight line separates XOR.
+- **Adding a hidden layer:** two hidden units solve XOR in 16 of 20 random starts, and three or four units in 20 of 20.
+
 [Learning roadmap](docs/learning_roadmap.md) · [Experiment design](docs/experiment_design.md) · [Mathematical analysis](reports/mathematical_analysis.md) · [Contributing](CONTRIBUTING.md) · [License](LICENSE)
 
 ---
@@ -154,7 +162,7 @@ No deep-learning framework (PyTorch, TensorFlow) or machine-learning library (sc
 Requires Python 3.9 or newer.
 
 ```bash
-git clone <repository-url> neuron-to-neural-networks
+git clone https://github.com/Marinnex-Lab/neuron-to-neural-networks.git
 cd neuron-to-neural-networks
 python -m venv .venv
 .venv\Scripts\activate            # Windows

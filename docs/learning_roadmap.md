@@ -10,11 +10,11 @@ Status key: **Implemented** (code runs and is tested), **Notes only** (written a
 | 2 | Perceptron and learning rule | Implemented in `src/perceptron.py` and `notebooks/02_perceptron_and_linear_separability.ipynb` |
 | 3 | AND, OR, XOR | Implemented in `experiments/logic_gates.py` and `notebooks/03_and_or_xor_experiments.ipynb`; proof below |
 | 4 | Activation functions | Implemented in `notebooks/04_activation_functions.ipynb` and `src/activations.py` |
-| 5 | Multilayer networks (forward propagation) | Implemented in `notebooks/05_forward_propagation.ipynb` |
+| 5 | Multilayer networks (forward propagation) | Implemented in `notebooks/05_forward_propagation.ipynb`; XOR with a hidden layer in `notebooks/09_multilayer_network.ipynb` and `experiments/multilayer_network/run.py` |
 | 6 | Loss functions | Implemented in `notebooks/06_loss_functions.ipynb` and `src/losses.py` |
 | 7 | Gradient descent and optimizers | Implemented in `notebooks/07_gradient_descent.ipynb` and `src/optimizers.py` |
 | 8 | Calculus and backpropagation | Implemented in `notebooks/08_backpropagation.ipynb` and `src/mlp.py` (two-layer network only) |
-| 9 | Transformers and LLMs | Planned |
+| 9 | Transformers and LLMs (attention, causal mask, residual block) | Implemented in `notebooks/11_attention_and_transformer_block.ipynb` and `src/transformer.py` |
 
 ## Module 1: Artificial neuron
 
@@ -71,9 +71,13 @@ Adding conditions 2 and 3 gives $w_1 + w_2 + 2b \ge 0$. Condition 4 gives $w_1 +
 
 Each has an executed notebook and tested code (see the table above). The notebooks state the mathematics, show numerical examples, and check results against the code.
 
-## Module 9
+## Module 9: Transformers and LLMs
 
-Planned. It will state the mathematics of attention, residual connections and layer normalization, and link to code only once that code has been run and tested.
+Implemented for one block. The notebook states the attention equation
+
+$$\text{Attention}(Q,K,V)=\text{softmax}\!\left(\frac{QK^\top}{\sqrt{d_k}}\right)V$$
+
+checks every shape, applies the causal mask, and builds a pre-norm residual block $Y = X + \text{FFN}(\text{LayerNorm}(X))$. It does not train a language model; see `reports/mathematical_analysis.md` for what is and is not claimed.
 
 ## Caveats
 

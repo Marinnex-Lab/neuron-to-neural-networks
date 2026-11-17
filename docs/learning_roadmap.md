@@ -9,11 +9,11 @@ Status key: **Implemented** (code runs and is tested), **Notes only** (written a
 | 1 | Artificial neuron | Implemented in `notebooks/01_artificial_neuron.ipynb` |
 | 2 | Perceptron and learning rule | Implemented in `src/perceptron.py` and `notebooks/02_perceptron_and_linear_separability.ipynb` |
 | 3 | AND, OR, XOR | Implemented in `experiments/logic_gates.py` and `notebooks/03_and_or_xor_experiments.ipynb`; proof below |
-| 4 | Activation functions | Planned |
-| 5 | Multilayer networks | Planned |
-| 6 | Loss functions | Planned |
-| 7 | Calculus and backpropagation | Planned |
-| 8 | Optimization | Planned |
+| 4 | Activation functions | Implemented in `notebooks/04_activation_functions.ipynb` and `src/activations.py` |
+| 5 | Multilayer networks (forward propagation) | Implemented in `notebooks/05_forward_propagation.ipynb` |
+| 6 | Loss functions | Implemented in `notebooks/06_loss_functions.ipynb` and `src/losses.py` |
+| 7 | Gradient descent and optimizers | Implemented in `notebooks/07_gradient_descent.ipynb` and `src/optimizers.py` |
+| 8 | Calculus and backpropagation | Implemented in `notebooks/08_backpropagation.ipynb` and `src/mlp.py` (two-layer network only) |
 | 9 | Transformers and LLMs | Planned |
 
 ## Module 1: Artificial neuron
@@ -67,9 +67,13 @@ Adding conditions 2 and 3 gives $w_1 + w_2 + 2b \ge 0$. Condition 4 gives $w_1 +
 - AND and OR reach 0 mistakes and stay there.
 - XOR never reaches 0 mistakes. The perceptron keeps moving its boundary and cannot settle. This matches the proof.
 
-## Module 4 to 9
+## Modules 4 to 8
 
-Planned. Each module will state its mathematics, give a numerical example, and link to code only once the code has been run and tested.
+Each has an executed notebook and tested code (see the table above). The notebooks state the mathematics, show numerical examples, and check results against the code.
+
+## Module 9
+
+Planned. It will state the mathematics of attention, residual connections and layer normalization, and link to code only once that code has been run and tested.
 
 ## Caveats
 

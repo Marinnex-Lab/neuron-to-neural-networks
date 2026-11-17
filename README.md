@@ -71,11 +71,23 @@ neuron-to-neural-networks/
 │   ├── 01_artificial_neuron.ipynb                       Implemented (executed)
 │   ├── 02_perceptron_and_linear_separability.ipynb      Implemented (executed)
 │   ├── 03_and_or_xor_experiments.ipynb                  Implemented (executed)
-│   └── 04–10 ...                                        Planned
+│   ├── 04_activation_functions.ipynb                    Implemented (executed)
+│   ├── 05_forward_propagation.ipynb                     Implemented (executed)
+│   ├── 06_loss_functions.ipynb                          Implemented (executed)
+│   ├── 07_gradient_descent.ipynb                        Implemented (executed)
+│   ├── 08_backpropagation.ipynb                         Implemented (executed)
+│   └── 09–10 ...                                        Planned
 ├── src/
-│   └── perceptron.py             Implemented (tested)
+│   ├── perceptron.py             Implemented (tested)
+│   ├── activations.py            Implemented (tested)
+│   ├── losses.py                 Implemented (tested)
+│   ├── mlp.py                    Implemented (tested; two-layer forward/backward)
+│   └── optimizers.py             Implemented (tested)
 ├── tests/
-│   └── test_perceptron.py        Implemented (6 tests)
+│   ├── test_perceptron.py        Implemented
+│   ├── test_activations_losses.py  Implemented
+│   ├── test_mlp.py               Implemented (gradient check vs finite differences)
+│   └── test_optimizers.py        Implemented
 ├── experiments/
 │   └── logic_gates.py            Implemented (AND, OR, XOR)
 ├── results/
@@ -181,8 +193,9 @@ After the implemented material, a reader should be able to explain why AND and O
 | Perceptron implementation and tests | Implemented |
 | AND / OR / XOR experiment | Implemented |
 | Learning roadmap and proof | Implemented |
-| Notebooks 01–03 (neuron, perceptron, AND/OR/XOR) | Implemented, executed without errors |
-| Notebooks 04–10 | Planned |
+| Notebooks 01–08 (neuron through backpropagation) | Implemented, executed without errors |
+| Modules `src/activations.py`, `losses.py`, `mlp.py`, `optimizers.py` | Implemented, 32 unit tests passing with the rest |
+| Notebooks 09–10 (multilayer experiments, experiment design) | Planned |
 | Multilayer network, backpropagation, optimizers | Planned |
 | Transformer modules | Planned |
 
